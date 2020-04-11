@@ -40,7 +40,7 @@ db = InfluxDBClient(influxServer, influxPort, influxUser,
 
 
 def get_eta(data):
-    time_patterns = ["%M mins %S secs", "%H hours %M mins"]
+    time_patterns = ["%M mins %S secs", "%H hours %M mins", "%S.00 secs"]
 
     for pattern in time_patterns:
         try:
